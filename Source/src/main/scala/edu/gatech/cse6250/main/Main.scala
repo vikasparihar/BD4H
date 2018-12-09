@@ -261,7 +261,11 @@ object Main {
     val spark = SparkHelper.spark
     val sc = spark.sparkContext
     val sqlContext = spark.sqlContext
-
+    
+    Cse6250_SepsisIdentificationDate(spark)
+    nonSepsisMaxDate(spark)
+    filterDataForDatesBeforeSepsisMaxDate(spark)
+    
     import sqlContext.implicits._
 
     val rawNotes = CSVHelper.loadCSVAsTable(spark, "data/NOTEEVENTS_Demo.csv")
