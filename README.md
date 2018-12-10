@@ -31,7 +31,7 @@ The code is divided into 3 main sections
  
   #### Run Spark code on Docker VM
    You can use the docker VM shared with the Homework assigments to run our Spark Code with sample Data.<br>
-   Connect to docker container and run below command at /source folder
+   Connect to docker container and run below command at /source folder<br>
    sbt compile “run datafolderpath” where datafolderpath is the path where sample data is kept
  
   #### Run Spark code on Azure Cluster
