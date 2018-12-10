@@ -66,4 +66,9 @@ The code is divided into 3 main sections
     * last 30 days
     * history of patients data
   * code to run logistic regression, CNN, RNN models
+  
+---
+
+### Final Models
+  * Final models are in the following folder: python/FinalModels
     
