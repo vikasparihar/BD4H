@@ -52,7 +52,7 @@ The code is divided into 3 main sections
      * NoSepsisoutputWithSepTime.csv
      * outputWithSepTime.csv
      * filteredChartData.csv
-     * Topics/topic file
+     * topics.csv
        
  
 ### Python
