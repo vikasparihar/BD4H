@@ -30,23 +30,25 @@ The code is divided into 3 main sections
   * extracts 20 topics from the patient notes and saves distribution of those 20 topics for each patient
  
   #### Run Spark code on Docker VM
-   You can use the docker VM shared with the Homework assigments to run our Spark Code with sample Data.<br>
+   You can use the docker VM shared with the Homework assigments to run our Spark Code with sample Data.<br>   
    Connect to docker container and run below command at /source folder<br>
-   sbt compile “run datafolderpath” where datafolderpath is the path where sample data is kept
+   *sbt compile “run datafolderpath”* where *datafolderpath* is the path where sample data is kept <br>
+   
+   Note: You will be able to find the sampel data in final assignment upload. Extarct the zip and copy the contents in datafolderpath<br>
  
   #### Run Spark code on Azure Cluster
   
   Generate a JAR package with all dependencies using command *sbt assembly*  
-  This will create teh jar file in target\scala-2.11  folder.
+  This will create the jar file in target\scala-2.11  folder.<br>
   
   Upload this JAR to Azure Blob storage as well.  
   Assuming the MIMIC data has been already uploaded to Azure Blob storage.If not please do so and you will find steps in ReadMe.docx submitted with the final project assigment
   
-  Login to spark cluster using ssh. You can use *Putty* to login
+  Login to spark cluster using ssh. You can use *Putty* to login<br>
    Run the command *Spark-submit –class “main class” “path to jar file” “first argument which is full path to data files”*
    e.g. spark-submit --class "edu.gatech.cse6250.main.Main"  "wasb://xyzcontainer@xyzabcstorgaeaccount.blob.core.windows.net/BlobCodeFolderName/big-data-project-1.1.0-2.11.12.jar" "wasb://xyzcontainer@xyzabcstorageaccount.blob.core.windows.net/BlobMIMICDataFolderName/"
    
-   *wasb* is used for accessing Azure File System
+   *wasb* is used for accessing Azure File System <br>
    You can see the output files under *BlobMIMICDataFolderName*.  We are using the same folder for generating output.
    * Here is the list of output files generated
      * NoSepsisoutputWithSepTime.csv
