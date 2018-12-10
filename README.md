@@ -70,5 +70,5 @@ The code is divided into 3 main sections
 ---
 
 ### Final Models
-  * Final models are in the following folder: python/FinalModels
+  * Final models are in the following folder: python/finalModels
     
