@@ -47,6 +47,11 @@ The code is divided into 3 main sections
    
    *wasb* is used for accessing Azure File System
    You can see the output files under *BlobMIMICDataFolderName*.  We are using the same folder for generating output.
+   * Here is the list of output files generated
+     * NoSepsisoutputWithSepTime.csv
+     * outputWithSepTime.csv
+     * filteredChartData.csv
+     * Topics/topic file
        
  
 ### Python
