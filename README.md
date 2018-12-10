@@ -30,7 +30,8 @@ The code is divided into 3 main sections
   * extracts 20 topics from the patient notes and saves distribution of those 20 topics for each patient
  
   #### Run Spark code on Docker VM
-   You can use the docker VM shared with the Homework assigments to run our Spark Code with sample Data.
+   You can use the docker VM shared with the Homework assigments to run our Spark Code with sample Data.<br>
+   Connect to docker container and run below command at /source folder
    sbt compile “run datafolderpath” where datafolderpath is the path where sample data is kept
  
   #### Run Spark code on Azure Cluster
